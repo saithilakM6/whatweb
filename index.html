@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="icon" type="image/png" href="svg0.svg"> -->
+    <link rel="icon" class="title" href="./icons/svg0.svg" type="image/x-icon">
+    <title>WhatsApp</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="" class="logo"><img src="./icons/svg0.svg" alt=""></a> <br>
+        <h4>WHATSAPP WEB</h4>
+    </div>
+    <!-- <img src="https://source.unsplash.com//1600x900/?Whatsapp" class="logo"> -->
+    <div class="bottom">
+    </div>
+
+    <div class="main">
+        <div class="divi">
+            <div class="title-main">
+                <p>Use WhatsApp on your computer</p>
+
+                <div class="list">
+
+                    <ol>
+                        <li>Open WhatsApp on your phone</li>
+                        <li>Tap Menu <a href="" class="menu"><img src="svg1.svg" alt=""></a>or settings and select
+                            <strong>Linked Devices</strong></li>
+                        <li>Tap on <strong>Link a device</strong></li>
+                        <li>Point your phone to this screen to capture the QR code</li>
+                    </ol>
+
+                </div>
+
+
+            </div>
+            <div class="qr-code"></div>
+        </div>
+        <span class="unqr">Link with phone number</span>
+        <div class="part2"><!-- <h3>Tutorial</h3> -->
+        </div>
+    </div>
+    <script>
+        var qrCodeDiv = document.querySelector(".qr-code");
+        var qrCode = new QRCode(qrCodeDiv, {
+            text: "https://example.com", // Replace with your desired QR code data
+
+        });
+    </script>
+</body>
+
+</html>
