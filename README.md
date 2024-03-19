@@ -1,3 +1,3 @@
 # whatweb
 
-https://hunter-02.github.io/whatweb/
+https://saithilakM6.github.io/whatweb/
